@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="calculator">
+    <input type="text" id="result" disabled>
+    <div class="buttons">
+      <div class="button-row">
+        <button onclick="clearResult()">AC</button>
+        <button onclick="deleteLastChar()">C</button>
+        <button onclick="appendOperator('/')">÷</button>
+        <button onclick="appendOperator('*')">×</button>
+      </div>
+      <div class="button-row">
+        <button onclick="appendValue(7)">7</button>
+        <button onclick="appendValue(8)">8</button>
+        <button onclick="appendValue(9)">9</button>
+        <button onclick="appendOperator('-')">-</button>
+      </div>
+      <div class="button-row">
+        <button onclick="appendValue(4)">4</button>
+        <button onclick="appendValue(5)">5</button>
+        <button onclick="appendValue(6)">6</button>
+        <button onclick="appendOperator('+')">+</button>
+      </div>
+      <div class="button-row">
+        <button onclick="appendValue(1)">1</button>
+        <button onclick="appendValue(2)">2</button>
+        <button onclick="appendValue(3)">3</button>
+        <button onclick="appendValue('.')">.</button>
+      </div>
+      <div class="button-row">
+        <button onclick="appendOperator('(')">(</button>
+        <button onclick="appendValue(0)">0</button>
+        <button onclick="appendOperator(')')">)</button>
+        <button onclick="calculateEquation()" class="equal">=</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
